@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Urban Air Quality Visualization</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Data</a>
+    <a href="#">Methodology</a>
+    <a href="#">Contact</a>
+</nav>
+<h1 id="home">Welcome to Urban Air Quality Visualization</h1>
+<p>This is your project homepage.</p>
+<div class="imageBox">
+<img src="airquality.png" alt="Air Quality Image" width="500">
+</div>
+<a
+href="https://worldview.earthdata.nasa.gov/"target="_blank">
+<button id="opensatelliteButton">Open Satellite Data from NASA</button>
+</a>
+<div class="search-container">
+<input type="text"id="search-box"placeholder="Enter location">
+<button onclick="searchlocation()">Search</button>
+</div>
+<div id="map"></div>
+<div class="about-box"id="about">
+<h2>About the project</h2>
+<p>
+This project visualizes urban air quality using satellite data.
+It helps understand pollution levels and identify critical areas.
+</p>
+</div>
+<script>
+document.getElementById('opensatellite').addEventlistener('click',function() {
+window.open('https://earthengine.google.com/', '_blank');
+});
+</script>
+<h2>Data Sources</h2>
+<p>Satellite data from NASA and pollution data from CPCB are used for analysis.</p>
+<h2>Methodology</h2>
+<p>Data is collected,cleaned,processed and visualized to show air quality levels in different areas.</p>
+<h2>Conclusion</h2>
+<p>This project helps identify pollution hotspots and supports environmental decision making.<p>
+<footer>
+<p>© 2026 Urban Air Quality Visualization Project</p>
+<footer>
+<p>Urban Air Quality Visualization Project</p>
+<p>Created by:Rajasri.K | 2026</p>
+</footer>
+</body>
+</html>
